@@ -1,0 +1,555 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F064654C19E5415E00F35A4C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F064654B19E5415E00F35A4C /* main.m */; };
+		F064656619E5415E00F35A4C /* RRMetaballsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F064656519E5415E00F35A4C /* RRMetaballsTests.m */; };
+		F064657619E5476100F35A4C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F064657219E5476100F35A4C /* Main.storyboard */; };
+		F064657719E5476100F35A4C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F064657419E5476100F35A4C /* Images.xcassets */; };
+		F064657E19E5481B00F35A4C /* RRViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F064657B19E5481B00F35A4C /* RRViewController.m */; };
+		F064657F19E5481B00F35A4C /* RRAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F064657D19E5481B00F35A4C /* RRAppDelegate.m */; };
+		F07BAD3B1A0D2F9800BB6103 /* RRMetaball.m in Sources */ = {isa = PBXBuildFile; fileRef = F07BAD351A0D2F9800BB6103 /* RRMetaball.m */; };
+		F07BAD3C1A0D2F9800BB6103 /* RRMetaballsLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = F07BAD381A0D2F9800BB6103 /* RRMetaballsLayer.m */; };
+		F07BAD3D1A0D2F9800BB6103 /* RRMetaballsView.m in Sources */ = {isa = PBXBuildFile; fileRef = F07BAD3A1A0D2F9800BB6103 /* RRMetaballsView.m */; };
+		F091616119FA997000AEF295 /* RRTestView.m in Sources */ = {isa = PBXBuildFile; fileRef = F091616019FA997000AEF295 /* RRTestView.m */; };
+		F0F0E0BD1A12281C00144993 /* RRMetaballsViewAnimationBlockDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F0F0E0BC1A12281C00144993 /* RRMetaballsViewAnimationBlockDelegate.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F064656019E5415E00F35A4C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F064653E19E5415E00F35A4C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F064654519E5415E00F35A4C;
+			remoteInfo = RRMetaballs;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F064654619E5415E00F35A4C /* RRMetaballs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RRMetaballs.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F064654A19E5415E00F35A4C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F064654B19E5415E00F35A4C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F064655F19E5415E00F35A4C /* RRMetaballsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RRMetaballsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F064656519E5415E00F35A4C /* RRMetaballsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RRMetaballsTests.m; sourceTree = "<group>"; };
+		F064657319E5476100F35A4C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F064657419E5476100F35A4C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		F064657A19E5481B00F35A4C /* RRViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RRViewController.h; sourceTree = "<group>"; };
+		F064657B19E5481B00F35A4C /* RRViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RRViewController.m; sourceTree = "<group>"; };
+		F064657C19E5481B00F35A4C /* RRAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RRAppDelegate.h; sourceTree = "<group>"; };
+		F064657D19E5481B00F35A4C /* RRAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RRAppDelegate.m; sourceTree = "<group>"; };
+		F07BAD341A0D2F9800BB6103 /* RRMetaball.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RRMetaball.h; sourceTree = "<group>"; };
+		F07BAD351A0D2F9800BB6103 /* RRMetaball.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RRMetaball.m; sourceTree = "<group>"; };
+		F07BAD371A0D2F9800BB6103 /* RRMetaballsLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RRMetaballsLayer.h; sourceTree = "<group>"; };
+		F07BAD381A0D2F9800BB6103 /* RRMetaballsLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RRMetaballsLayer.m; sourceTree = "<group>"; };
+		F07BAD391A0D2F9800BB6103 /* RRMetaballsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RRMetaballsView.h; sourceTree = "<group>"; };
+		F07BAD3A1A0D2F9800BB6103 /* RRMetaballsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RRMetaballsView.m; sourceTree = "<group>"; };
+		F091615F19FA997000AEF295 /* RRTestView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RRTestView.h; sourceTree = "<group>"; };
+		F091616019FA997000AEF295 /* RRTestView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RRTestView.m; sourceTree = "<group>"; };
+		F0A926221A1370D200067E83 /* RRMetaballsTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RRMetaballsTests.h; sourceTree = "<group>"; };
+		F0A926241A13733B00067E83 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F0F0E0BB1A12281C00144993 /* RRMetaballsViewAnimationBlockDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RRMetaballsViewAnimationBlockDelegate.h; sourceTree = "<group>"; };
+		F0F0E0BC1A12281C00144993 /* RRMetaballsViewAnimationBlockDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RRMetaballsViewAnimationBlockDelegate.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F064654319E5415E00F35A4C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F064655C19E5415E00F35A4C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F064653D19E5415E00F35A4C = {
+			isa = PBXGroup;
+			children = (
+				F064654819E5415E00F35A4C /* RRMetaballs */,
+				F064656219E5415E00F35A4C /* RRMetaballsTests */,
+				F064654719E5415E00F35A4C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F064654719E5415E00F35A4C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F064654619E5415E00F35A4C /* RRMetaballs.app */,
+				F064655F19E5415E00F35A4C /* RRMetaballsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F064654819E5415E00F35A4C /* RRMetaballs */ = {
+			isa = PBXGroup;
+			children = (
+				F064657819E5481B00F35A4C /* Classes */,
+				F064656F19E5476100F35A4C /* Resources */,
+				F064654919E5415E00F35A4C /* Supporting Files */,
+			);
+			path = RRMetaballs;
+			sourceTree = "<group>";
+		};
+		F064654919E5415E00F35A4C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F064654B19E5415E00F35A4C /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F064656219E5415E00F35A4C /* RRMetaballsTests */ = {
+			isa = PBXGroup;
+			children = (
+				F0A926221A1370D200067E83 /* RRMetaballsTests.h */,
+				F064656519E5415E00F35A4C /* RRMetaballsTests.m */,
+				F0A926231A13733B00067E83 /* Resources */,
+			);
+			path = RRMetaballsTests;
+			sourceTree = "<group>";
+		};
+		F064656F19E5476100F35A4C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F064654A19E5415E00F35A4C /* Info.plist */,
+				F064657219E5476100F35A4C /* Main.storyboard */,
+				F064657419E5476100F35A4C /* Images.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		F064657819E5481B00F35A4C /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				F07BAD3E1A0D2F9B00BB6103 /* Support */,
+				F091615E19FA997000AEF295 /* View */,
+				F064657919E5481B00F35A4C /* Controller */,
+				F064657C19E5481B00F35A4C /* RRAppDelegate.h */,
+				F064657D19E5481B00F35A4C /* RRAppDelegate.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		F064657919E5481B00F35A4C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F064657A19E5481B00F35A4C /* RRViewController.h */,
+				F064657B19E5481B00F35A4C /* RRViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F07BAD321A0D2F9800BB6103 /* RRMetaballs */ = {
+			isa = PBXGroup;
+			children = (
+				F07BAD331A0D2F9800BB6103 /* Model */,
+				F07BAD361A0D2F9800BB6103 /* View */,
+			);
+			name = RRMetaballs;
+			path = ../../../RRMetaballs;
+			sourceTree = "<group>";
+		};
+		F07BAD331A0D2F9800BB6103 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F07BAD341A0D2F9800BB6103 /* RRMetaball.h */,
+				F07BAD351A0D2F9800BB6103 /* RRMetaball.m */,
+				F0F0E0BB1A12281C00144993 /* RRMetaballsViewAnimationBlockDelegate.h */,
+				F0F0E0BC1A12281C00144993 /* RRMetaballsViewAnimationBlockDelegate.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F07BAD361A0D2F9800BB6103 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F07BAD371A0D2F9800BB6103 /* RRMetaballsLayer.h */,
+				F07BAD381A0D2F9800BB6103 /* RRMetaballsLayer.m */,
+				F07BAD391A0D2F9800BB6103 /* RRMetaballsView.h */,
+				F07BAD3A1A0D2F9800BB6103 /* RRMetaballsView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F07BAD3E1A0D2F9B00BB6103 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				F07BAD321A0D2F9800BB6103 /* RRMetaballs */,
+			);
+			name = Support;
+			sourceTree = "<group>";
+		};
+		F091615E19FA997000AEF295 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F091615F19FA997000AEF295 /* RRTestView.h */,
+				F091616019FA997000AEF295 /* RRTestView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F0A926231A13733B00067E83 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F0A926241A13733B00067E83 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F064654519E5415E00F35A4C /* RRMetaballs */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F064656919E5415E00F35A4C /* Build configuration list for PBXNativeTarget "RRMetaballs" */;
+			buildPhases = (
+				F064654219E5415E00F35A4C /* Sources */,
+				F064654319E5415E00F35A4C /* Frameworks */,
+				F064654419E5415E00F35A4C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RRMetaballs;
+			productName = RRMetaballs;
+			productReference = F064654619E5415E00F35A4C /* RRMetaballs.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F064655E19E5415E00F35A4C /* RRMetaballsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F064656C19E5415E00F35A4C /* Build configuration list for PBXNativeTarget "RRMetaballsTests" */;
+			buildPhases = (
+				F064655B19E5415E00F35A4C /* Sources */,
+				F064655C19E5415E00F35A4C /* Frameworks */,
+				F064655D19E5415E00F35A4C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F064656119E5415E00F35A4C /* PBXTargetDependency */,
+			);
+			name = RRMetaballsTests;
+			productName = RRMetaballsTests;
+			productReference = F064655F19E5415E00F35A4C /* RRMetaballsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F064653E19E5415E00F35A4C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = "Rolandas Razma";
+				TargetAttributes = {
+					F064654519E5415E00F35A4C = {
+						CreatedOnToolsVersion = 6.0;
+					};
+					F064655E19E5415E00F35A4C = {
+						CreatedOnToolsVersion = 6.0;
+						TestTargetID = F064654519E5415E00F35A4C;
+					};
+				};
+			};
+			buildConfigurationList = F064654119E5415E00F35A4C /* Build configuration list for PBXProject "RRMetaballs" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F064653D19E5415E00F35A4C;
+			productRefGroup = F064654719E5415E00F35A4C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F064654519E5415E00F35A4C /* RRMetaballs */,
+				F064655E19E5415E00F35A4C /* RRMetaballsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F064654419E5415E00F35A4C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F064657719E5476100F35A4C /* Images.xcassets in Resources */,
+				F064657619E5476100F35A4C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F064655D19E5415E00F35A4C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F064654219E5415E00F35A4C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F064657F19E5481B00F35A4C /* RRAppDelegate.m in Sources */,
+				F064657E19E5481B00F35A4C /* RRViewController.m in Sources */,
+				F07BAD3B1A0D2F9800BB6103 /* RRMetaball.m in Sources */,
+				F07BAD3C1A0D2F9800BB6103 /* RRMetaballsLayer.m in Sources */,
+				F0F0E0BD1A12281C00144993 /* RRMetaballsViewAnimationBlockDelegate.m in Sources */,
+				F07BAD3D1A0D2F9800BB6103 /* RRMetaballsView.m in Sources */,
+				F091616119FA997000AEF295 /* RRTestView.m in Sources */,
+				F064654C19E5415E00F35A4C /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F064655B19E5415E00F35A4C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F064656619E5415E00F35A4C /* RRMetaballsTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F064656119E5415E00F35A4C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F064654519E5415E00F35A4C /* RRMetaballs */;
+			targetProxy = F064656019E5415E00F35A4C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F064657219E5476100F35A4C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F064657319E5476100F35A4C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F064656719E5415E00F35A4C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_SECURITY_FLOATLOOPCOUNTER = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_CXX0X_EXTENSIONS = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_EXPLICIT_OWNERSHIP_TYPE = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_IMPLICIT_CONVERSION = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_PASCAL_STRINGS = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_TREAT_IMPLICIT_FUNCTION_DECLARATIONS_AS_ERRORS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_FIELD_INITIALIZERS = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_FOUR_CHARACTER_CONSTANTS = YES;
+				GCC_WARN_HIDDEN_VIRTUAL_FUNCTIONS = YES;
+				GCC_WARN_INITIALIZER_NOT_FULLY_BRACKETED = YES;
+				GCC_WARN_NON_VIRTUAL_DESTRUCTOR = YES;
+				GCC_WARN_SIGN_COMPARE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNKNOWN_PRAGMAS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_LABEL = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F064656819E5415E00F35A4C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_SECURITY_FLOATLOOPCOUNTER = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_STATIC_ANALYZER_MODE = deep;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_CXX0X_EXTENSIONS = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_EXPLICIT_OWNERSHIP_TYPE = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_IMPLICIT_CONVERSION = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_PASCAL_STRINGS = NO;
+				GCC_OPTIMIZATION_LEVEL = fast;
+				GCC_TREAT_IMPLICIT_FUNCTION_DECLARATIONS_AS_ERRORS = YES;
+				GCC_UNROLL_LOOPS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_FIELD_INITIALIZERS = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_FOUR_CHARACTER_CONSTANTS = YES;
+				GCC_WARN_HIDDEN_VIRTUAL_FUNCTIONS = YES;
+				GCC_WARN_INITIALIZER_NOT_FULLY_BRACKETED = YES;
+				GCC_WARN_NON_VIRTUAL_DESTRUCTOR = YES;
+				GCC_WARN_SIGN_COMPARE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNKNOWN_PRAGMAS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_LABEL = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LLVM_LTO = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "-ObjC";
+				RUN_CLANG_STATIC_ANALYZER = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F064656A19E5415E00F35A4C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = RRMetaballs/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F064656B19E5415E00F35A4C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = RRMetaballs/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		F064656D19E5415E00F35A4C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = RRMetaballsTests/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RRMetaballs.app/RRMetaballs";
+			};
+			name = Debug;
+		};
+		F064656E19E5415E00F35A4C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = RRMetaballsTests/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RRMetaballs.app/RRMetaballs";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F064654119E5415E00F35A4C /* Build configuration list for PBXProject "RRMetaballs" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F064656719E5415E00F35A4C /* Debug */,
+				F064656819E5415E00F35A4C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F064656919E5415E00F35A4C /* Build configuration list for PBXNativeTarget "RRMetaballs" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F064656A19E5415E00F35A4C /* Debug */,
+				F064656B19E5415E00F35A4C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F064656C19E5415E00F35A4C /* Build configuration list for PBXNativeTarget "RRMetaballsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F064656D19E5415E00F35A4C /* Debug */,
+				F064656E19E5415E00F35A4C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F064653E19E5415E00F35A4C /* Project object */;
+}
