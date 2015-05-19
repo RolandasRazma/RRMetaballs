@@ -13,11 +13,11 @@
 		F064657719E5476100F35A4C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F064657419E5476100F35A4C /* Images.xcassets */; };
 		F064657E19E5481B00F35A4C /* RRViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F064657B19E5481B00F35A4C /* RRViewController.m */; };
 		F064657F19E5481B00F35A4C /* RRAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F064657D19E5481B00F35A4C /* RRAppDelegate.m */; };
-		F07BAD3B1A0D2F9800BB6103 /* RRMetaball.m in Sources */ = {isa = PBXBuildFile; fileRef = F07BAD351A0D2F9800BB6103 /* RRMetaball.m */; };
-		F07BAD3C1A0D2F9800BB6103 /* RRMetaballsLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = F07BAD381A0D2F9800BB6103 /* RRMetaballsLayer.m */; };
-		F07BAD3D1A0D2F9800BB6103 /* RRMetaballsView.m in Sources */ = {isa = PBXBuildFile; fileRef = F07BAD3A1A0D2F9800BB6103 /* RRMetaballsView.m */; };
+		F08D361B1B0B328600F5B572 /* LinkedListStack.m in Sources */ = {isa = PBXBuildFile; fileRef = F08D36181B0B328600F5B572 /* LinkedListStack.m */; };
+		F08D361C1B0B328600F5B572 /* UIImage+FloodFill.m in Sources */ = {isa = PBXBuildFile; fileRef = F08D361A1B0B328600F5B572 /* UIImage+FloodFill.m */; };
 		F091616119FA997000AEF295 /* RRTestView.m in Sources */ = {isa = PBXBuildFile; fileRef = F091616019FA997000AEF295 /* RRTestView.m */; };
-		F0F0E0BD1A12281C00144993 /* RRMetaballsViewAnimationBlockDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F0F0E0BC1A12281C00144993 /* RRMetaballsViewAnimationBlockDelegate.m */; };
+		F091616519FA998600AEF295 /* RRMetaballsView.m in Sources */ = {isa = PBXBuildFile; fileRef = F091616419FA998600AEF295 /* RRMetaballsView.m */; };
+		F091616619FA998600AEF295 /* RRMetaballsView.m in Sources */ = {isa = PBXBuildFile; fileRef = F091616419FA998600AEF295 /* RRMetaballsView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +35,7 @@
 		F064654A19E5415E00F35A4C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F064654B19E5415E00F35A4C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F064655F19E5415E00F35A4C /* RRMetaballsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RRMetaballsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F064656419E5415E00F35A4C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F064656519E5415E00F35A4C /* RRMetaballsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RRMetaballsTests.m; sourceTree = "<group>"; };
 		F064657319E5476100F35A4C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F064657419E5476100F35A4C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -42,18 +43,14 @@
 		F064657B19E5481B00F35A4C /* RRViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RRViewController.m; sourceTree = "<group>"; };
 		F064657C19E5481B00F35A4C /* RRAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RRAppDelegate.h; sourceTree = "<group>"; };
 		F064657D19E5481B00F35A4C /* RRAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RRAppDelegate.m; sourceTree = "<group>"; };
-		F07BAD341A0D2F9800BB6103 /* RRMetaball.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RRMetaball.h; sourceTree = "<group>"; };
-		F07BAD351A0D2F9800BB6103 /* RRMetaball.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RRMetaball.m; sourceTree = "<group>"; };
-		F07BAD371A0D2F9800BB6103 /* RRMetaballsLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RRMetaballsLayer.h; sourceTree = "<group>"; };
-		F07BAD381A0D2F9800BB6103 /* RRMetaballsLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RRMetaballsLayer.m; sourceTree = "<group>"; };
-		F07BAD391A0D2F9800BB6103 /* RRMetaballsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RRMetaballsView.h; sourceTree = "<group>"; };
-		F07BAD3A1A0D2F9800BB6103 /* RRMetaballsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RRMetaballsView.m; sourceTree = "<group>"; };
+		F08D36171B0B328600F5B572 /* LinkedListStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LinkedListStack.h; sourceTree = "<group>"; };
+		F08D36181B0B328600F5B572 /* LinkedListStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LinkedListStack.m; sourceTree = "<group>"; };
+		F08D36191B0B328600F5B572 /* UIImage+FloodFill.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+FloodFill.h"; sourceTree = "<group>"; };
+		F08D361A1B0B328600F5B572 /* UIImage+FloodFill.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+FloodFill.m"; sourceTree = "<group>"; };
 		F091615F19FA997000AEF295 /* RRTestView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RRTestView.h; sourceTree = "<group>"; };
 		F091616019FA997000AEF295 /* RRTestView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RRTestView.m; sourceTree = "<group>"; };
-		F0A926221A1370D200067E83 /* RRMetaballsTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RRMetaballsTests.h; sourceTree = "<group>"; };
-		F0A926241A13733B00067E83 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F0F0E0BB1A12281C00144993 /* RRMetaballsViewAnimationBlockDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RRMetaballsViewAnimationBlockDelegate.h; sourceTree = "<group>"; };
-		F0F0E0BC1A12281C00144993 /* RRMetaballsViewAnimationBlockDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RRMetaballsViewAnimationBlockDelegate.m; sourceTree = "<group>"; };
+		F091616319FA998600AEF295 /* RRMetaballsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RRMetaballsView.h; sourceTree = "<group>"; };
+		F091616419FA998600AEF295 /* RRMetaballsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RRMetaballsView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,11 +110,18 @@
 		F064656219E5415E00F35A4C /* RRMetaballsTests */ = {
 			isa = PBXGroup;
 			children = (
-				F0A926221A1370D200067E83 /* RRMetaballsTests.h */,
 				F064656519E5415E00F35A4C /* RRMetaballsTests.m */,
-				F0A926231A13733B00067E83 /* Resources */,
+				F064656319E5415E00F35A4C /* Supporting Files */,
 			);
 			path = RRMetaballsTests;
+			sourceTree = "<group>";
+		};
+		F064656319E5415E00F35A4C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F064656419E5415E00F35A4C /* Info.plist */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		F064656F19E5476100F35A4C /* Resources */ = {
@@ -133,7 +137,8 @@
 		F064657819E5481B00F35A4C /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				F07BAD3E1A0D2F9B00BB6103 /* Support */,
+				F075D7BF1B0B318F00170B61 /* Support */,
+				F064658019E548A900F35A4C /* Model */,
 				F091615E19FA997000AEF295 /* View */,
 				F064657919E5481B00F35A4C /* Controller */,
 				F064657C19E5481B00F35A4C /* RRAppDelegate.h */,
@@ -151,62 +156,53 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
-		F07BAD321A0D2F9800BB6103 /* RRMetaballs */ = {
+		F064658019E548A900F35A4C /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				F07BAD331A0D2F9800BB6103 /* Model */,
-				F07BAD361A0D2F9800BB6103 /* View */,
 			);
-			name = RRMetaballs;
-			path = ../../../RRMetaballs;
+			name = Model;
 			sourceTree = "<group>";
 		};
-		F07BAD331A0D2F9800BB6103 /* Model */ = {
+		F075D7BF1B0B318F00170B61 /* Support */ = {
 			isa = PBXGroup;
 			children = (
-				F07BAD341A0D2F9800BB6103 /* RRMetaball.h */,
-				F07BAD351A0D2F9800BB6103 /* RRMetaball.m */,
-				F0F0E0BB1A12281C00144993 /* RRMetaballsViewAnimationBlockDelegate.h */,
-				F0F0E0BC1A12281C00144993 /* RRMetaballsViewAnimationBlockDelegate.m */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		F07BAD361A0D2F9800BB6103 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				F07BAD371A0D2F9800BB6103 /* RRMetaballsLayer.h */,
-				F07BAD381A0D2F9800BB6103 /* RRMetaballsLayer.m */,
-				F07BAD391A0D2F9800BB6103 /* RRMetaballsView.h */,
-				F07BAD3A1A0D2F9800BB6103 /* RRMetaballsView.m */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		F07BAD3E1A0D2F9B00BB6103 /* Support */ = {
-			isa = PBXGroup;
-			children = (
-				F07BAD321A0D2F9800BB6103 /* RRMetaballs */,
+				F08D36161B0B328600F5B572 /* floodfill */,
 			);
 			name = Support;
-			sourceTree = "<group>";
+			path = RRMetaballs/Support;
+			sourceTree = SOURCE_ROOT;
+		};
+		F08D36161B0B328600F5B572 /* floodfill */ = {
+			isa = PBXGroup;
+			children = (
+				F08D36171B0B328600F5B572 /* LinkedListStack.h */,
+				F08D36181B0B328600F5B572 /* LinkedListStack.m */,
+				F08D36191B0B328600F5B572 /* UIImage+FloodFill.h */,
+				F08D361A1B0B328600F5B572 /* UIImage+FloodFill.m */,
+			);
+			name = floodfill;
+			path = RRMetaballs/Classes/Support/floodfill;
+			sourceTree = SOURCE_ROOT;
 		};
 		F091615E19FA997000AEF295 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				F091616219FA998600AEF295 /* RRMetaballsView */,
 				F091615F19FA997000AEF295 /* RRTestView.h */,
 				F091616019FA997000AEF295 /* RRTestView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
 		};
-		F0A926231A13733B00067E83 /* Resources */ = {
+		F091616219FA998600AEF295 /* RRMetaballsView */ = {
 			isa = PBXGroup;
 			children = (
-				F0A926241A13733B00067E83 /* Info.plist */,
+				F091616319FA998600AEF295 /* RRMetaballsView.h */,
+				F091616419FA998600AEF295 /* RRMetaballsView.m */,
 			);
-			path = Resources;
-			sourceTree = "<group>";
+			name = RRMetaballsView;
+			path = ../RRMetaballsView;
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -308,11 +304,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				F064657F19E5481B00F35A4C /* RRAppDelegate.m in Sources */,
+				F08D361B1B0B328600F5B572 /* LinkedListStack.m in Sources */,
 				F064657E19E5481B00F35A4C /* RRViewController.m in Sources */,
-				F07BAD3B1A0D2F9800BB6103 /* RRMetaball.m in Sources */,
-				F07BAD3C1A0D2F9800BB6103 /* RRMetaballsLayer.m in Sources */,
-				F0F0E0BD1A12281C00144993 /* RRMetaballsViewAnimationBlockDelegate.m in Sources */,
-				F07BAD3D1A0D2F9800BB6103 /* RRMetaballsView.m in Sources */,
+				F091616519FA998600AEF295 /* RRMetaballsView.m in Sources */,
+				F08D361C1B0B328600F5B572 /* UIImage+FloodFill.m in Sources */,
 				F091616119FA997000AEF295 /* RRTestView.m in Sources */,
 				F064654C19E5415E00F35A4C /* main.m in Sources */,
 			);
@@ -322,6 +317,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F091616619FA998600AEF295 /* RRMetaballsView.m in Sources */,
 				F064656619E5415E00F35A4C /* RRMetaballsTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -352,56 +348,39 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_SECURITY_FLOATLOOPCOUNTER = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_CXX0X_EXTENSIONS = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_EXPLICIT_OWNERSHIP_TYPE = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_SUSPICIOUS_IMPLICIT_CONVERSION = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_PASCAL_STRINGS = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_TREAT_IMPLICIT_FUNCTION_DECLARATIONS_AS_ERRORS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_MISSING_FIELD_INITIALIZERS = YES;
-				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_FOUR_CHARACTER_CONSTANTS = YES;
-				GCC_WARN_HIDDEN_VIRTUAL_FUNCTIONS = YES;
-				GCC_WARN_INITIALIZER_NOT_FULLY_BRACKETED = YES;
-				GCC_WARN_NON_VIRTUAL_DESTRUCTOR = YES;
-				GCC_WARN_SIGN_COMPARE = YES;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNKNOWN_PRAGMAS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_LABEL = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				OTHER_LDFLAGS = "-ObjC";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -410,54 +389,32 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_SECURITY_FLOATLOOPCOUNTER = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_STATIC_ANALYZER_MODE = deep;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_CXX0X_EXTENSIONS = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_EXPLICIT_OWNERSHIP_TYPE = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_SUSPICIOUS_IMPLICIT_CONVERSION = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_ENABLE_PASCAL_STRINGS = NO;
-				GCC_OPTIMIZATION_LEVEL = fast;
-				GCC_TREAT_IMPLICIT_FUNCTION_DECLARATIONS_AS_ERRORS = YES;
-				GCC_UNROLL_LOOPS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_MISSING_FIELD_INITIALIZERS = YES;
-				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_FOUR_CHARACTER_CONSTANTS = YES;
-				GCC_WARN_HIDDEN_VIRTUAL_FUNCTIONS = YES;
-				GCC_WARN_INITIALIZER_NOT_FULLY_BRACKETED = YES;
-				GCC_WARN_NON_VIRTUAL_DESTRUCTOR = YES;
-				GCC_WARN_SIGN_COMPARE = YES;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNKNOWN_PRAGMAS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_LABEL = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				LLVM_LTO = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "-ObjC";
-				RUN_CLANG_STATIC_ANALYZER = YES;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -467,7 +424,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = RRMetaballs/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -478,7 +434,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = RRMetaballs/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -497,7 +452,7 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = RRMetaballsTests/Resources/Info.plist;
+				INFOPLIST_FILE = RRMetaballsTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RRMetaballs.app/RRMetaballs";
@@ -512,7 +467,7 @@
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = RRMetaballsTests/Resources/Info.plist;
+				INFOPLIST_FILE = RRMetaballsTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RRMetaballs.app/RRMetaballs";

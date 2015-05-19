@@ -2,31 +2,32 @@
 //  RRMetaballsTests.m
 //  RRMetaballsTests
 //
-//  Copyright (c) 2014 Rolandas Razma <rolandas@razma.lt>
-//
-//  Permission is hereby granted, free of charge, to any person obtaining a copy
-//  of this software and associated documentation files (the "Software"), to deal
-//  in the Software without restriction, including without limitation the rights
-//  to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-//  copies of the Software, and to permit persons to whom the Software is
-//  furnished to do so, subject to the following conditions:
-//
-//  The above copyright notice and this permission notice shall be included in
-//  all copies or substantial portions of the Software.
-//
-//  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-//  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-//  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-//  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-//  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-//  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-//  THE SOFTWARE.
+//  Created by Rolandas Razma on 08/10/2014.
+//  Copyright (c) 2014 Rolandas Razma. All rights reserved.
 //
 
-#import "RRMetaballsTests.h"
+@import UIKit;
+@import XCTest;
+#import "RRMetaballsView.h"
 
 
-@implementation RRMetaballsTests
+@interface RRMetaballsView (RRPrivate)
+
+- (void)recalculate;
+- (void)drawContoursRect:(CGRect)rect inContext:(CGContextRef)contextRef;
+- (void)drawFillsForRect:(CGRect)rect inContext:(CGContextRef)contextRef;
+
+@end
+
+
+@interface RRMetaballsTests : XCTestCase
+
+@end
+
+
+@implementation RRMetaballsTests {
+    RRMetaballsView *_metaballsView;
+}
 
 
 #pragma mark -
@@ -37,14 +38,137 @@
     [super setUp];
     
     // Put setup code here. This method is called before the invocation of each test method in the class.
+    _metaballsView = [[RRMetaballsView alloc] initWithFrame:CGRectMake(0, 0, 320.0f, 480.0f)];
 }
 
 
 - (void)tearDown {
     // Put teardown code here. This method is called after the invocation of each test method in the class.
-
+    _metaballsView = nil;
+    
     [super tearDown];
 }
+
+
+#pragma mark -
+#pragma mark RRMetaballsTests
+
+
+- (void)saveImageFromCurrentImageContextToFile:(NSString *)file {
+    [UIImageJPEGRepresentation(UIGraphicsGetImageFromCurrentImageContext(), 1.0f) writeToFile:file atomically:YES];
+}
+
+
+//- (void)testRecalculateNotConnectedPerformance {
+//
+//    [_metaballsView addBall:  RRBallMake( CGPointMake((320 /2) -100, (480 /2)     ), 40, [UIColor  redColor] )];
+//    [_metaballsView addBall:  RRBallMake( CGPointMake((320 /2) +100, (480 /2)     ), 40, [UIColor greenColor] )];
+//    [_metaballsView addBall:  RRBallMake( CGPointMake((320 /2)     , (480 /2) +100), 40, [UIColor  blueColor] )];
+//    
+//    [self measureBlock: ^{
+//        [_metaballsView recalculate];
+//    }];
+//    
+//}
+
+
+//- (void)testDrawContoursNotConnectedPerformance {
+//    
+//    [_metaballsView addBall:  RRBallMake( CGPointMake((320 /2) -100, (480 /2)     ), 40, [UIColor  redColor] )];
+//    [_metaballsView addBall:  RRBallMake( CGPointMake((320 /2) +100, (480 /2)     ), 40, [UIColor greenColor] )];
+//    [_metaballsView addBall:  RRBallMake( CGPointMake((320 /2)     , (480 /2) +100), 40, [UIColor  blueColor] )];
+//    
+//    [_metaballsView recalculate];
+//
+//    [self measureBlock: ^{
+//        
+//        UIGraphicsBeginImageContextWithOptions(_metaballsView.bounds.size, NO, 0.0f);
+//        
+//        [_metaballsView drawContoursRect:_metaballsView.bounds inContext:UIGraphicsGetCurrentContext()];
+//
+//        UIGraphicsEndImageContext();
+//
+//    }];
+//
+//}
+
+
+//- (void)testDrawFillsNotConnectedPerformance {
+//    
+//    [_metaballsView addBall:  RRBallMake( CGPointMake((320 /2) -100, (480 /2)     ), 40, [UIColor  redColor] )];
+//    [_metaballsView addBall:  RRBallMake( CGPointMake((320 /2) +100, (480 /2)     ), 40, [UIColor greenColor] )];
+//    [_metaballsView addBall:  RRBallMake( CGPointMake((320 /2)     , (480 /2) +100), 40, [UIColor  blueColor] )];
+//    
+//    [_metaballsView recalculate];
+//    
+//    UIGraphicsBeginImageContextWithOptions(_metaballsView.bounds.size, NO, 0.0f);
+//    [_metaballsView drawContoursRect:_metaballsView.bounds inContext:UIGraphicsGetCurrentContext()];
+//    
+//    [self measureBlock: ^{
+//        [_metaballsView drawFillsForRect:_metaballsView.bounds inContext:UIGraphicsGetCurrentContext()];
+//        [self saveImageFromCurrentImageContextToFile:@"/Users/GameBit/Desktop/testDrawFillsNotConnectedPerformance.jpg"];
+//        NSLog(@"x");
+//    }];
+//    
+//}
+
+
+//- (void)testRecalculateConnectedPerformance {
+//    
+//    [_metaballsView addBall:  RRBallMake( CGPointMake((320 /2) -70, (480 /2)    ), 40, [UIColor  redColor] )];
+//    [_metaballsView addBall:  RRBallMake( CGPointMake((320 /2) +70, (480 /2)    ), 40, [UIColor greenColor] )];
+//    [_metaballsView addBall:  RRBallMake( CGPointMake((320 /2)    , (480 /2) +70), 40, [UIColor  blueColor] )];
+//
+//    [self measureBlock: ^{
+//        [_metaballsView recalculate];
+//    }];
+//    
+//}
+
+
+//- (void)testDrawConnectedPerformance {
+//    
+//    [_metaballsView addBall:  RRBallMake( CGPointMake((320 /2) -70, (480 /2)    ), 40, [UIColor  redColor] )];
+//    [_metaballsView addBall:  RRBallMake( CGPointMake((320 /2) +70, (480 /2)    ), 40, [UIColor greenColor] )];
+//    [_metaballsView addBall:  RRBallMake( CGPointMake((320 /2)    , (480 /2) +70), 40, [UIColor  blueColor] )];
+//
+//    [_metaballsView recalculate];
+//
+//    [self measureBlock: ^{
+//        UIGraphicsBeginImageContextWithOptions(_metaballsView.bounds.size, NO, 0.0f);
+//        
+//        [_metaballsView drawContoursRect:_metaballsView.bounds inContext:UIGraphicsGetCurrentContext()];
+//
+//        UIGraphicsEndImageContext();
+//    }];
+//    
+//}
+//
+//
+//- (void)testDrawFillConnectedPerformance {
+//    
+//    [_metaballsView addBall:  RRBallMake( CGPointMake((320 /2) -70, (480 /2)    ), 40, [UIColor  redColor] )];
+//    [_metaballsView addBall:  RRBallMake( CGPointMake((320 /2) +70, (480 /2)    ), 40, [UIColor greenColor] )];
+//    [_metaballsView addBall:  RRBallMake( CGPointMake((320 /2)    , (480 /2) +70), 40, [UIColor  blueColor] )];
+//    
+//    [_metaballsView recalculate];
+//    
+//    UIGraphicsBeginImageContextWithOptions(_metaballsView.bounds.size, NO, 0.0f);
+//    [_metaballsView drawContoursRect:_metaballsView.bounds inContext:UIGraphicsGetCurrentContext()];
+//    
+//    [self saveImageFromCurrentImageContextToFile:@"/Users/GameBit/Desktop/testDrawPerformance_r.jpg"];
+//    
+//    [self measureBlock: ^{
+//
+//        [_metaballsView drawFillsForRect:_metaballsView.bounds inContext:UIGraphicsGetCurrentContext()];
+//        
+//        [self saveImageFromCurrentImageContextToFile:@"/Users/GameBit/Desktop/testDrawPerformance_f.jpg"];
+//        
+//        NSLog(@"xx");
+//
+//    }];
+//    
+//}
 
 
 @end
