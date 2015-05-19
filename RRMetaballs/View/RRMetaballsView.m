@@ -270,4 +270,5 @@
 }
 
 
+@dynamic layer;
 @end

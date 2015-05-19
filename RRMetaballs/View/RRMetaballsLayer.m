@@ -87,10 +87,10 @@ static inline float metaball(const CGFloat originX, const CGFloat originY, const
     for ( int i = 0; i < ballsLength; i++ ) {
         RRBall ball = balls[i];
         
-        float dx = originX -ball.center.x;
-        float dy = originY -ball.center.y;
+        CGFloat dx = originX -ball.center.x;
+        CGFloat dy = originY -ball.center.y;
         
-        float d2 = pow2(dx) +pow2(dy);
+        CGFloat d2 = pow2(dx) +pow2(dy);
         
         if( d2 != 0.0f ){
             sum += ball.radiuspow2 /d2;

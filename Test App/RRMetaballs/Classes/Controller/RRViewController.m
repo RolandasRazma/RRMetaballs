@@ -28,4 +28,6 @@
 
 @implementation RRViewController
 
+
+@dynamic view;
 @end
